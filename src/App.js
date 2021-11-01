@@ -1,12 +1,15 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import TaskList from './components/taskList';
+import TaskList from './components/taskList'
+import Author from './components/author'
+import Clock from './components/clock';
+import Calculator from './components/calculator'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -17,8 +20,11 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
+        </a> */}
         <TaskList />
+        <Author name="杜东振" />
+        <Clock />
+        <Calculator />
       </header>
     </div>
   );
