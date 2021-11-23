@@ -1,7 +1,7 @@
 import React from "react"
 import { Button, Input } from "antd"
 
-class AddRecord extends React.Component {
+class AddChange extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -11,7 +11,7 @@ class AddRecord extends React.Component {
   showInputs() {
     this.setState({isShowInputs: true})
   }
-  saveRecord() {
+  saveChange() {
     this.setState({isShowInputs: false})
   }
   render() {
@@ -29,7 +29,7 @@ class AddRecord extends React.Component {
             <Button 
               type="primary" 
               size="small"
-              onClick={() => {this.saveRecord()}}
+              onClick={() => {this.saveChange()}}
             >保存变更</Button>
           </div>
         }
@@ -38,4 +38,4 @@ class AddRecord extends React.Component {
   }
 }
 
-export default AddRecord
+export default AddChange
